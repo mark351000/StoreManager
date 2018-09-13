@@ -1,0 +1,6 @@
+import com.mark.storagemanager.Product
+
+model {
+    Product product
+}
+json tmpl.product(product)

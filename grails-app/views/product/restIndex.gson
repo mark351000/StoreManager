@@ -1,0 +1,6 @@
+import com.mark.storagemanager.Product
+
+model {
+   List<Product> products = []
+}
+json tmpl.product(products)

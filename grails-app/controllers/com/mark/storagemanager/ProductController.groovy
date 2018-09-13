@@ -1,5 +1,6 @@
 package com.mark.storagemanager
 
+
 class ProductController {
 
     ProductService productService
@@ -10,10 +11,18 @@ class ProductController {
         respond productService.list()
     }
 
+    def restIndex() {
+        def myModel = [productList : productService.list()]
+        render(view: "restIndex", model: myModel )
+    }
+
     def show(Long id) {
         respond productService.get(id)
     }
 
+    def Rshow(Long id) {
+        render(view: "Rshow", model: [product : productService.get(id)])
+    }
 
     def create() {
         respond new Product(params)
