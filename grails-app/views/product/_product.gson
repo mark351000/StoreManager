@@ -1,0 +1,10 @@
+import com.mark.storagemanager.Product
+
+model{
+    Product product
+}
+
+json{
+    name product.name
+    descr product.description
+}

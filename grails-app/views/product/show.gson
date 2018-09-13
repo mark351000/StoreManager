@@ -1,0 +1,6 @@
+import com.mark.storagemanager.Product
+
+model{
+    Product product
+}
+json g.render(template: "product", model: [product: product])
